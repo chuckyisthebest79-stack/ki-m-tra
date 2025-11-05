@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Tin tức – Khoa CNTT Đại học Đại Nam</title>
+<link rel="stylesheet" href="style1.css">
+<style>
+/* Card tin tức */
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 15px;
+}
+
+.news-card {
+    width: 30%;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    transition: .3s;
+}
+
+.news-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.news-card h3 {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.news-card p {
+    padding: 0 10px 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.news-card a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background: #ff6a00;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.news-card a:hover {
+    background: #d95500;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>KHOA CÔNG NGHỆ THÔNG TIN – ĐẠI HỌC ĐẠI NAM</h1>
+</header>
+
+<nav>
+    <ul class="menu">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+
+        <li><a href="#">Đào tạo ▾</a>
+            <ul class="dropdown">
+                <li><a href="#">Đại học</a></li>
+                <li><a href="#">Thạc sĩ</a></li>
+                <li><a href="#">Ngắn hạn</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">Sinh viên ▾</a>
+            <ul class="dropdown">
+                <li><a href="#">CLB Sinh viên</a></li>
+                <li><a href="#">Học bổng</a></li>
+                <li><a href="#">Việc làm</a></li>
+            </ul>
+        </li>
+
+        <li><a class="active" href="tin-tuc.html">Tin tức</a></li>
+        <li><a href="lien-he.html">Liên hệ</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2 style="text-align:center; margin-top:15px;">Tin tức mới nhất</h2>
+
+    <div class="news-container">
+
+        <div class="news-card">
+            <img src="khai giảng.jpg" alt="">
+            <h3>Khai giảng năm học mới 2025</h3>
+            <p>Không khí hứng khởi tại lễ khai giảng với sự tham gia của hơn 1000 tân sinh viên Khoa CNTT.</p>
+            <a href="#">Đọc thêm</a>
+        </div>
+
+        <div class="news-card">
+            <img src="iot và ai.jpg" alt="">
+            <h3>Hội thảo AI & IoT</h3>
+            <p>Buổi hội thảo chuyên đề giúp sinh viên cập nhật xu hướng công nghệ hiện đại nhất hiện nay.</p>
+            <a href="#">Đọc thêm</a>
+        </div>
+
+        <div class="news-card">
+            <img src="nhom.jpg" alt="">
+            <h3>CLB lập trình đạt giải cao</h3>
+            <p>Đội tuyển sinh viên Đại Nam giành Huy chương Vàng cuộc thi lập trình quốc gia.</p>
+            <a href="#">Đọc thêm</a>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    © 2025 Khoa CNTT – Đại học Đại Nam
+</footer>
+
+</body>
+</html>

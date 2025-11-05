@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Liên hệ – Khoa CNTT Đại học Đại Nam</title>
+<link rel="stylesheet" href="style1.css">
+
+<style>
+/* Form Liên hệ */
+.contact-box {
+    width: 60%;
+    margin: 25px auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.contact-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff6a00;
+}
+
+.contact-box label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+.contact-box input,
+.contact-box textarea,
+.contact-box select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.contact-box textarea {
+    height: 120px;
+}
+
+.btn-send {
+    display: block;
+    width: 100%;
+    background: #ff6a00;
+    border: none;
+    padding: 12px;
+    color: white;
+    font-size: 17px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.btn-send:hover {
+    background: #d95500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-box {
+        width: 90%;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>KHOA CÔNG NGHỆ THÔNG TIN – ĐẠI HỌC ĐẠI NAM</h1>
+</header>
+
+<nav>
+    <ul class="menu">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+
+        <li><a href="#">Đào tạo ▾</a>
+            <ul class="dropdown">
+                <li><a href="http://dainamedu-my.sharepoint.com/:b:/g/personal/phong_daotao_dainam_edu_vn/EUAIc_YK339NqqaCgubfuE4BAwDIhHh8G3sK3YowK3oj4A?e=3a9CiZ">Đại học</a></li>
+                <li><a href="https://dainam.edu.vn/vi/tin-tuc/quyet-dinh-ban-hanh-quy-che-tuyen-sinh-va-dao-tao-trinh-do-thac-si-cua-truong-dai-hoc-dai-nam">Thạc sĩ</a></li>
+                <li><a href="https://dainam.edu.vn/vi/tin-tuc/quyet-dinh-ve-viec-ban-hanh-quy-dinh-tuyen-sinh-va-dao-tao-trinh-do-tien-si">Tiến sĩ</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">Sinh viên ▾</a>
+            <ul class="dropdown">
+                <li><a href="https://dainam.edu.vn/vi/tin-tuc/dai-hoc-dai-nam-cong-bo-quy-hoc-bong-va-ho-tro-tai-chinh-tri-gia-55-ty-dong-cho-tan-sinh-vien-k19">Học bổng</a></li>
+                <li><a href="phụ.html">Việc làm</a></li>
+            </ul>
+        </li>
+
+        <li><a href="tin-tuc.html">Tin tức</a></li>
+        <li><a class="active" href="lien-he.html">Liên hệ</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="contact-box">
+        <h2>Liên hệ với Khoa CNTT</h2>
+
+        <form>
+            <label>Họ và tên:</label>
+            <input type="text" placeholder="Nhập họ tên">
+
+            <label>Email:</label>
+            <input type="email" placeholder="Nhập email">
+
+            <label>Chủ đề:</label>
+            <select>
+                <option>Hỏi thông tin tuyển sinh</option>
+                <option>Giải đáp học vụ</option>
+                <option>Hỗ trợ kỹ thuật</option>
+                <option>Khác</option>
+            </select>
+
+            <label>Nội dung:</label>
+            <textarea placeholder="Nhập nội dung cần liên hệ"></textarea>
+
+            <button type="submit" class="btn-send">Gửi thông tin</button>
+        </form>
+    </div>
+</main>
+
+<footer>
+    © 2025 Khoa CNTT – Đại học Đại Nam
+</footer>
+
+</body>
+</html>
